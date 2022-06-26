@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+<!-- this template is the exact same as html, thus overide any blocks that were defined inside of base.html -->
+{% block title %}Notes{% endblock %}
+
+{% block content %}  
+<h1 align="center">Notes</h1>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.notes %}
+    <!-- As we always pass "user", we can access all the notes associated with the user 
+    We have a notes field in the models.py which is defined under the class User (to store all the notes)-->
+    <li class="list-group-item">
+        {{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+            <!-- the function "deleteNote" in JS will take in a note.id 
+            Here, we are specifing that we want to pass the ID of the note showing in the {note.data} list/column
+            In that way if the close button in this row is pressed, it will send the note ID associated with the note, and delete the note from the database  -->
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</ul>
+<form method="POST">
+    <textarea name="note" id="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+      <button type="submit" class="btn btn-primary">Add Note</button>
+    </div>
+  </form>
+  {% endblock %}
+

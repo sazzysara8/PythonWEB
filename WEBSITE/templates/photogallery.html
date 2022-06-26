@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/photogallery.css') }}">
+{% endblock %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+{% block content %} 
+<br>
+<br>
+
+<h2 class="heading">Photo Gallery</h2>
+
+
+<div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img align="middle" id="expandedImg" style="width:70%" >
+    <div id="imgtext"></div>
+  </div>
+
+
+
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+      <img src="{{ GC }}" alt="Grand Canyon" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ GC2 }}" alt="Grand Canyon" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ GC3 }}" alt="Grand Canyon" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ GC4 }}" alt="Grand Canyon and Me" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NBN }}" alt="Nabana in Mie" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NBN2 }}" alt="Nabana in Mie" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NBN3 }}" alt="Nabana in Mie" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NBN4 }}" alt="Nabana in Mie" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NF }}" alt="Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NF2 }}" alt="Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NF3 }}" alt="Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NF4 }}" alt="Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NFE }}" alt="Evening View at Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NFN }}" alt="Night View at Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ NFS }}" alt="Stars in Niagara Falls" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="{{ SM }}" alt="Santa Monica" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+{% endblock %}

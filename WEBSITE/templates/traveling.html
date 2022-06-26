@@ -1,0 +1,47 @@
+
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/traveling.css') }}">
+{% endblock %}
+
+
+{% block content %} 
+<br>
+<br>
+
+<h2 class="heading">Traveling</h2>
+<div class="grid">
+    <div class="container1">
+        <img class="image" src="{{ H1 }}" />
+        <img class="image" src="{{ H2 }}" />
+        <img class="image" src="{{ H3 }}" />
+    </div>
+    <div class="container2">
+        <img class="image" src="{{ H4 }}" />
+        <img class="image" src="{{ H5 }}" />
+        <img class="image" src="{{ H6 }}" />
+    </div>
+    <div class="container3">
+        <img class="image" src="{{ H7 }}" />
+        <img class="image" src="{{ H8 }}" />
+        <img class="image" src="{{ H9 }}" />
+    </div>
+    <div class="container4">
+        <img class="image" src="{{ H10 }}" />
+        <img class="image" src="{{ H11 }}" />
+        <img class="image" src="{{ H12 }}" />
+    </div>
+    <div class="container5">
+        <img class="image" src="{{ H13 }}" />
+        <img class="image" src="{{ H14 }}" />
+        <img class="image" src="{{ H15 }}" />
+    </div>
+    <div class="container6">
+        <img class="image" src="{{ H16 }}" />
+        <img class="image" src="{{ H17 }}" />
+        <img class="image" src="{{ H18 }}" />
+    </div>
+</div>
+
+  {% endblock %}

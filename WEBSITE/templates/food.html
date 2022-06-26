@@ -1,0 +1,110 @@
+
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/food.css') }}">
+{% endblock %}
+
+
+{% block content %} 
+<br>
+<br>
+
+<h2 class="heading">Photo Gallery</h2>
+
+
+<div class="grid">
+    <div class="item">
+        <img src="{{ f1 }}" alt="img" style="width:100%">
+        <p>2021 Feburary 10 <br>CCC Cheese Cheers Cafe<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f4 }}" alt="img" style="width:100%">
+        <p>2021 May 13 <br>A Weekend A Home<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f5 }}" alt="img" style="width:100%">
+        <p>2021 May 13 <br>たか松<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f6 }}" alt="img" style="width:100%">
+        <p>2021 May 17 <br>猪一<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f2 }}" alt="img" style="width:100%">
+        <p>2021 July 7 <br>2D Cafe<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f3 }}" alt="img" style="width:100%">
+        <p>2021 June 13 <br>Ron Herman Cafe<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f8 }}" alt="img" style="width:100%">
+        <p>2021 September 22 <br>Gordon Ramsay Burger<br>Las Vegas</p>
+    </div>
+    <div class="item">
+        <img src="{{ f7 }}" alt="img" style="width:100%">
+        <p>2021 November 13 <br>わっぱ飯田舎屋<br>Niigata</p>
+    </div>
+    <div class="item">
+        <img src="{{ f18 }}" alt="img" style="width:100%">
+        <p>2022 January 22<br>Ron Herman Cafe<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f13 }}" alt="img" style="width:100%">
+        <p>2022 Feburary 3<br>Slurp<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f14 }}" alt="img" style="width:100%">
+        <p>2022 Feburary 3<br>Libertē Pâtisserie Boulangerie<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f15 }}" alt="img" style="width:100%">
+        <p>2022 Feburary 8<br>CAFE AALTO<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f16 }}" alt="img" style="width:100%">
+        <p>2022 Feburary 11<br>バカ一代<br>Kagawa</p>
+    </div>
+    <div class="item">
+        <img src="{{ f17 }}" alt="img" style="width:100%">
+        <p>2022 Feburary 18<br>近江牛一筋　だいきち<br>Shiga</p>
+    </div>
+    <div class="item">
+        <img src="{{ f19 }}" alt="img" style="width:100%">
+        <p>2022 March 3<br>Cafe ACE<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f20 }}" alt="img" style="width:100%">
+        <p>2022 March 3<br>Izakaya Restaurant 霞-Kasumi-<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f21 }}" alt="img" style="width:100%">
+        <p>2022 March 10<br>Pannel Cafe<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f22 }}" alt="img" style="width:100%">
+        <p>2022 March 10<br>Wakana<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f23 }}" alt="img" style="width:100%">
+        <p>2022 March 13<br>Lipton<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f9 }}" alt="img" style="width:100%">
+        <p>2022 April 4<br>優光<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f10 }}" alt="img" style="width:100%">
+        <p>2022 April 9<br>肉屋 黒川<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f11 }}" alt="img" style="width:100%">
+        <p>2022 April 9<br>Direct Coffee<br>Kyoto</p>
+    </div>
+    <div class="item">
+        <img src="{{ f12 }}" alt="img" style="width:100%">
+        <p>2022 April 17<br>洋食屋キチキチ<br>Kyoto</p>
+    </div>
+</div>
+ {% endblock %}

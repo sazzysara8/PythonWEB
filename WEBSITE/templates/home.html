@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/home.css') }}">
+
+{% block content %}  
+
+
+
+<div class="container">
+    <img src="{{ url_for('static',filename='Homeimg/homeimg.jpg') }}" class="bg-container">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="centered">
+        <h1>Welcome to Sara's <br>
+            Lifetime Journey</h1>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+<!-- <img src="{{ url_for('static',filename='Homeimg/homeimg.jpg') }}" class="image"> -->
