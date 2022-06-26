@@ -1,0 +1,40 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(63, 63, 63);
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  font-weight:lighter;
+  font-size: 20pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-container {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  opacity: 0.7; 
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top:auto;
+  left: 0;
+  }
+  
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }

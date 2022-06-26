@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(45deg, #011a2b,#58516b)
+}
+div.imgt {
+    position:fixed;
+   top:1em;
+   left:18em;
+   padding: 0px;
+}
+p.title {
+    font-family: 'Arial Black';
+    color: #eaf4fc;
+    font-size:5em;
+    line-height:90%;
+    margin: 0px;
+}
+
+div.menu {
+position:absolute;
+top:2em;
+left:5em;
+border:2px solid;
+padding:5px;
+font-size: 1em;
+line-height:150%;
+font-family: 'Arial Black';
+color:#cccccc;
+    }
+
+.noline{
+    color: #cccccc
+}
+.noline:hover {
+color: rgb(195, 195, 255);
+}
+.list-item img{
+opacity: 0.6; 
+cursor: pointer; 
+}

@@ -1,0 +1,12 @@
+.grid{
+  display: grid;
+  gap: 26px;
+  grid-template-columns:repeat(3, minmax(240px,1fr));
+  margin-top: 6%;
+  text-align: center;
+}
+
+.item{
+  color: rgb(107, 107, 107);
+  font-family:'Times New Roman', Times, serif;
+}
