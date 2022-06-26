@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS/aboutme.css') }}">
+{% endblock %}
+
+
+{% block content %} 
+<br>
+<br>
+
+<h2 class="heading">ABOUT  ME</h2>
+<section class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="list">
+                <div class="list-item">
+                    <a href="/drawing"><img src="{{ drawing }}" class="photo">
+                    <div class="text">DRAWING</div>
+                </div>
+                <div class="list-item">
+                    <a href="/photogallery"><img src="{{ photography }}" class="photo"></a>
+                    <div class="text">PHOTOGRAPHY</div>
+                </div>    
+                <div class="list-item">
+                    <a href="/traveling"><img src="{{ NY }}" class="photo">
+                    <div class="text">TRAVELING</div>
+                </div>
+                <div class="list-item">
+                    <a href="/food"><img src="{{ food }}" class="photo">
+                    <div class="text">FOOD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+ 
